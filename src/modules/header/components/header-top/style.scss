@@ -1,0 +1,28 @@
+@import "../../../../styles/colors/style.scss";
+
+.header-top {
+  background-color: $main;
+  width: 100%;
+  &__inner {
+    height: 40px;
+    margin-inline: auto;
+    background-color: inherit;
+    max-width: 1116px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  &__function-block {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.notification {
+  width: 20px;
+  height: 20px;
+}

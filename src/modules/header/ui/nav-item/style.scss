@@ -1,0 +1,36 @@
+@import "../../../../styles/colors/style.scss";
+
+.nav-bar {
+  &__item-title {
+    color: $fontsOnMain;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-align: top;
+    line-height: 10px;
+  }
+
+  &__divider {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: $main;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+  }
+
+  &__item:focus .nav-bar__divider {
+    display: block;
+  }
+
+  &__item:focus .nav-bar__item-title {
+    color: $main;
+  }
+}
